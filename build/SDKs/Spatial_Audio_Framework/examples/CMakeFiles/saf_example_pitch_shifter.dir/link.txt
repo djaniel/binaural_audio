@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsaf_example_pitch_shifter.a CMakeFiles/saf_example_pitch_shifter.dir/src/pitch_shifter/pitch_shifter_internal.c.o CMakeFiles/saf_example_pitch_shifter.dir/src/pitch_shifter/pitch_shifter.c.o
+/usr/bin/ranlib libsaf_example_pitch_shifter.a

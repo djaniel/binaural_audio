@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsaf_example_matrixconv.a CMakeFiles/saf_example_matrixconv.dir/src/matrixconv/matrixconv_internal.c.o CMakeFiles/saf_example_matrixconv.dir/src/matrixconv/matrixconv.c.o
+/usr/bin/ranlib libsaf_example_matrixconv.a

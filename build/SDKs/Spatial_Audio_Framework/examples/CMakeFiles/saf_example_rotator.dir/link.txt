@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsaf_example_rotator.a CMakeFiles/saf_example_rotator.dir/src/rotator/rotator_internal.c.o CMakeFiles/saf_example_rotator.dir/src/rotator/rotator.c.o
+/usr/bin/ranlib libsaf_example_rotator.a

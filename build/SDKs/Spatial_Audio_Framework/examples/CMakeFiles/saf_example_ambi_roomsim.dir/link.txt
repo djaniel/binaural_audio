@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsaf_example_ambi_roomsim.a CMakeFiles/saf_example_ambi_roomsim.dir/src/ambi_roomsim/ambi_roomsim_internal.c.o CMakeFiles/saf_example_ambi_roomsim.dir/src/ambi_roomsim/ambi_roomsim.c.o
+/usr/bin/ranlib libsaf_example_ambi_roomsim.a

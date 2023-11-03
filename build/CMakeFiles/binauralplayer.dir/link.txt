@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/binauralplayer.dir/src/main.cpp.o CMakeFiles/binauralplayer.dir/src/binauralplayer/binauralplayer.cpp.o CMakeFiles/binauralplayer.dir/src/tinywav/tinywav.c.o -o binauralplayer  SDKs/Spatial_Audio_Framework/framework/libsaf.a -lm /usr/lib/x86_64-linux-gnu/libopenblas.so /usr/lib/x86_64-linux-gnu/liblapacke.so 

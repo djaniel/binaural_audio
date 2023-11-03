@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsaf_example_panner.a CMakeFiles/saf_example_panner.dir/src/panner/panner_internal.c.o CMakeFiles/saf_example_panner.dir/src/panner/panner.c.o
+/usr/bin/ranlib libsaf_example_panner.a

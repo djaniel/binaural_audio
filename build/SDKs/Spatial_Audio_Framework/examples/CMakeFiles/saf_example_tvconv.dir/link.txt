@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsaf_example_tvconv.a CMakeFiles/saf_example_tvconv.dir/src/tvconv/tvconv_internal.c.o CMakeFiles/saf_example_tvconv.dir/src/tvconv/tvconv.c.o
+/usr/bin/ranlib libsaf_example_tvconv.a

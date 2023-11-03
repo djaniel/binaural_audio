@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsaf_example_binauraliser.a CMakeFiles/saf_example_binauraliser.dir/src/binauraliser/binauraliser_internal.c.o CMakeFiles/saf_example_binauraliser.dir/src/binauraliser/binauraliser.c.o
+/usr/bin/ranlib libsaf_example_binauraliser.a

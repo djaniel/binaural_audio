@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsaf_example_spreader.a CMakeFiles/saf_example_spreader.dir/src/spreader/spreader_internal.c.o CMakeFiles/saf_example_spreader.dir/src/spreader/spreader.c.o
+/usr/bin/ranlib libsaf_example_spreader.a

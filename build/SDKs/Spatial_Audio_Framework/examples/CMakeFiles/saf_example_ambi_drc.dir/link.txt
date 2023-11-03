@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsaf_example_ambi_drc.a CMakeFiles/saf_example_ambi_drc.dir/src/ambi_drc/ambi_drc_internal.c.o CMakeFiles/saf_example_ambi_drc.dir/src/ambi_drc/ambi_drc.c.o
+/usr/bin/ranlib libsaf_example_ambi_drc.a
