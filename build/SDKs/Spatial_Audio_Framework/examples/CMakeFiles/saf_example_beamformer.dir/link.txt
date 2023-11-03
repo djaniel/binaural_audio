@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsaf_example_beamformer.a CMakeFiles/saf_example_beamformer.dir/src/beamformer/beamformer_internal.c.o CMakeFiles/saf_example_beamformer.dir/src/beamformer/beamformer.c.o
-/usr/bin/ranlib libsaf_example_beamformer.a

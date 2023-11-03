@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsaf_example_multiconv.a CMakeFiles/saf_example_multiconv.dir/src/multiconv/multiconv_internal.c.o CMakeFiles/saf_example_multiconv.dir/src/multiconv/multiconv.c.o
-/usr/bin/ranlib libsaf_example_multiconv.a

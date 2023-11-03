@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsaf_example_array2sh.a CMakeFiles/saf_example_array2sh.dir/src/array2sh/array2sh_internal.c.o CMakeFiles/saf_example_array2sh.dir/src/array2sh/array2sh.c.o
-/usr/bin/ranlib libsaf_example_array2sh.a

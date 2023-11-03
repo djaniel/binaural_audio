@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsaf_example_decorrelator.a CMakeFiles/saf_example_decorrelator.dir/src/decorrelator/decorrelator_internal.c.o CMakeFiles/saf_example_decorrelator.dir/src/decorrelator/decorrelator.c.o
-/usr/bin/ranlib libsaf_example_decorrelator.a

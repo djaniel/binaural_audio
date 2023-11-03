@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsaf_example_dirass.a CMakeFiles/saf_example_dirass.dir/src/dirass/dirass_internal.c.o CMakeFiles/saf_example_dirass.dir/src/dirass/dirass.c.o
-/usr/bin/ranlib libsaf_example_dirass.a

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsaf_example_ambi_enc.a CMakeFiles/saf_example_ambi_enc.dir/src/ambi_enc/ambi_enc_internal.c.o CMakeFiles/saf_example_ambi_enc.dir/src/ambi_enc/ambi_enc.c.o
-/usr/bin/ranlib libsaf_example_ambi_enc.a
