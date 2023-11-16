@@ -15,6 +15,12 @@ add_subdirectory(SDKs)
 
 add_executable(${PROJECT_NAME} src/main.cpp 
     src/binauralplayer/binauralplayer.cpp
+    src/binauralplayer/PluginProcessor.cpp
     src/tinywav/tinywav.c)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE saf -lm)
+target_link_libraries(${PROJECT_NAME} 
+  PRIVATE 
+    saf
+    -lm
+    saf_example_ambi_roomsim
+  )
