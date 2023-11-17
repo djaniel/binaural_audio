@@ -23,7 +23,8 @@
 #define PLUGINPROCESSOR_H_INCLUDED
 
 //#include <JuceHeader.h>
-#include "ambi_roomsim.h"
+#include <ambi_roomsim.h>
+#include <string>
 
 #define CONFIGURATIONHELPER_ENABLE_GENERICLAYOUT_METHODS 1 
 //#include "../../resources/ConfigurationHelper.h"
@@ -95,7 +96,7 @@ public:
     int getNumParameters() ;
     float getParameter (int index) ;
     void setParameter (int index, float newValue) ;
-    //const std::string getParameterName (int index) ;
+    const std::string getParameterName (int index) ;
     //const std::string getParameterText (int index) ;
     //const std::string getInputChannelName (int channelIndex)  ;
     //const std::string getOutputChannelName (int channelIndex)  ;

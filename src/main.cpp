@@ -45,15 +45,23 @@ int main(int argc, char *argv[]) {
     float* pFrameData[MAX_NUM_CHANNELS];
     int frameSize = ambi_roomsim_getFrameSize();
 
+    PluginProcessor pp;
+
+    std::cout << k_NumOfParameters << std::endl;
+//    return 0;
+
+    pp.setParameter(k_numReceivers, 1.0f);
+    pp.setParameter(k_numSources, 1.0f);
+
     while (samplesProcessed < totalNumSamples) {
         /* standard parameters */
-        (float)(ambi_roomsim_getOutputOrder(hAmbi)-1)/(float)(MAX_SH_ORDER-1);
+  //      (float)(ambi_roomsim_getOutputOrder(hAmbi)-1)/(float)(MAX_SH_ORDER-1);
         /* source position parameters */
 
         /* Receiver position parameters */
 
 
-        ambi_roomsim_process(hAmbi, pFrameData, pFrameData, nNumInputs, nNumOutputs, frameSize);
+    //    ambi_roomsim_process(hAmbi, pFrameData, pFrameData, nNumInputs, nNumOutputs, frameSize);
 
         float buffer[NUM_CHANNELS * BLOCK_SIZE];
     

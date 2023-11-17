@@ -155,42 +155,43 @@ const String PluginProcessor::getName() const
 {
     return JucePlugin_Name;
 }*/
-/*
+
 const std::string PluginProcessor::getParameterName (int index)
 {
     // standard parameters 
     if(index < k_NumOfParameters){
         switch (index) {
-            case k_outputOrder:  return "order";
-            case k_channelOrder: return "channel_order";
-            case k_normType:     return "norm_type";
-            case k_numSources:   return "num_sources";
-            case k_numReceivers: return "num_receivers";
-            default: return "NULL";
+            case k_outputOrder:  return std::string("order");
+            case k_channelOrder: return std::string("channel_order");
+            case k_normType:     return std::string("norm_type");
+            case k_numSources:   return std::string("num_sources");
+            case k_numReceivers: return std::string("num_receivers");
+            default: return std::string("NULL");
         }
     }
+   
     // source position parameters 
     else if(index<3*ROOM_SIM_MAX_NUM_SOURCES+k_NumOfParameters){
         index-=k_NumOfParameters;
         switch((index % 3)){
-            case 0: return TRANS("SourceX_") + String((int)((float)index/3.0f+0.001f));
-            case 1: return TRANS("SourceY_") + String((int)((float)index/3.0f+0.001f));
-            case 2: return TRANS("SourceZ_") + String((int)((float)index/3.0f+0.001f));
-            default: return "NULL";
+            case 0: return std::string("SourceX_") + std::to_string((int)((float)index/3.0f+0.001f));
+            case 1: return std::string("SourceY_") + std::to_string((int)((float)index/3.0f+0.001f));
+            case 2: return std::string("SourceZ_") + std::to_string((int)((float)index/3.0f+0.001f));
+            default: return std::string("NULL");
         }
     }
     // Receiver position parameters 
     else{
         index-= (k_NumOfParameters+3*ROOM_SIM_MAX_NUM_SOURCES);
         switch((index % 3)){
-            case 0: return TRANS("ReceiverX_") + String((int)((float)index/3.0f+0.001f));
-            case 1: return TRANS("ReceiverY_") + String((int)((float)index/3.0f+0.001f));
-            case 2: return TRANS("ReceiverZ_") + String((int)((float)index/3.0f+0.001f));
-            default: return "NULL";
+            case 0: return std::string("ReceiverX_") + std::to_string((int)((float)index/3.0f+0.001f));
+            case 1: return std::string("ReceiverY_") + std::to_string((int)((float)index/3.0f+0.001f));
+            case 2: return std::string("ReceiverZ_") + std::to_string((int)((float)index/3.0f+0.001f));
+            default: return std::string("NULL");
         }
     }
 }
-*/
+
 /*
 const String PluginProcessor::getParameterText(int index)
 {
