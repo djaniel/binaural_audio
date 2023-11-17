@@ -52,14 +52,14 @@ class PluginProcessor
 {
 public:
     /* Get functions */
-    void* getFXHandle() { return hAmbi; }
+    //void* getFXHandle() { return hAmbi; }
     int getCurrentBlockSize(){ return nHostBlockSize; }
     int getCurrentNumInputs(){ return nNumInputs; }
     int getCurrentNumOutputs(){ return nNumOutputs; }
     
     /* For refreshing window during automation */ 
-    void setRefreshWindow(bool newState) { refreshWindow = newState; }
-    bool getRefreshWindow() { return refreshWindow; }
+    //void setRefreshWindow(bool newState) { refreshWindow = newState; }
+    //bool getRefreshWindow() { return refreshWindow; }
     
     /* VST CanDo */
     //pointer_sized_int handleVstManufacturerSpecific (int32 /*index*/, pointer_sized_int /*value*/, void* /*ptr*/, float /*opt*/) override { return 0; }
@@ -88,33 +88,33 @@ public:
 
     void prepareToPlay (double sampleRate, int samplesPerBlock);
     void releaseResources();
-    void processBlock (AudioSampleBuffer& buffer, MidiBuffer& midiMessages);
-    AudioProcessorEditor* createEditor();
-    bool hasEditor();
-    const String getName() ;
+    void processBlock (float& buffer);
+    //AudioProcessorEditor* createEditor();
+    //bool hasEditor();
+    //const std::string getName() ;
     int getNumParameters() ;
     float getParameter (int index) ;
     void setParameter (int index, float newValue) ;
-    const String getParameterName (int index) ;
-    const String getParameterText (int index) ;
-    const String getInputChannelName (int channelIndex)  ;
-    const String getOutputChannelName (int channelIndex)  ;
-    bool acceptsMidi() ;
-    bool producesMidi() ;
-    bool silenceInProducesSilenceOut() ;
-    double getTailLengthSeconds() ;
+    //const std::string getParameterName (int index) ;
+    //const std::string getParameterText (int index) ;
+    //const std::string getInputChannelName (int channelIndex)  ;
+    //const std::string getOutputChannelName (int channelIndex)  ;
+    //bool acceptsMidi() ;
+    //bool producesMidi() ;
+    bool silenceInProducesSilenceOut();
+    //double getTailLengthSeconds() ;
     int getNumPrograms() ;
     int getCurrentProgram() ;
     void setCurrentProgram(int index) ;
-    const String getProgramName(int index) ;
+    //const std::string getProgramName(int index) ;
     bool isInputChannelStereoPair (int index)  ;
     bool isOutputChannelStereoPair(int index)  ;
-    void changeProgramName(int index, const String& newName) ;
-    void getStateInformation (MemoryBlock& destData) ;
-    void setStateInformation (const void* data, int sizeInBytes) ;
+    //void changeProgramName(int index, const std::string& newName) ;
+    //void getStateInformation (MemoryBlock& destData) ;
+    //void setStateInformation (const void* data, int sizeInBytes) ;
 
 private:
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (PluginProcessor)
+//    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (PluginProcessor)
 };
 
 #endif  // PLUGINPROCESSOR_H_INCLUDED
