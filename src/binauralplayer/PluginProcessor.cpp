@@ -325,10 +325,25 @@ void PluginProcessor::releaseResources()
 }
 
 //void PluginProcessor::processBlock (AudioSampleBuffer& buffer)
-void PluginProcessor::processBlock (float& buffer)
+void PluginProcessor::processBlock (float *buffer, int samplesRead, int nchannels, int frameSize)
 {
+    
+    int nCurrentBlockSize = samplesRead;
+    nNumInputs = nchannels;
+    nNumOutputs = nchannels;
+    float* pFrameData[MAX_NUM_CHANNELS];
+    
+    if((nCurrentBlockSize % frameSize == 0)){ // divisible by frame size 
+        for (int frame = 0; frame < nCurrentBlockSize/frameSize; frame++) {
+            for (int ch = 0; ch < nchannels; ch++)
+                //pFrameData[ch] = &buffer[ch][frame*frameSize];
+                pFrameData[ch] = &buffer[frame * frameSize];
+
+            // perform processing 
+            ambi_roomsim_process(hAmbi, pFrameData, pFrameData, nNumInputs, nNumOutputs, frameSize);
+        }
+    }
     /*
-    int nCurrentBlockSize = nHostBlockSize = buffer.getNumSamples();
     nNumInputs = jmin(getTotalNumInputChannels(), buffer.getNumChannels());
     nNumOutputs = jmin(getTotalNumOutputChannels(), buffer.getNumChannels());
     float** bufferData = buffer.getArrayOfWritePointers();

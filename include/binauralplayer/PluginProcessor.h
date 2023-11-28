@@ -89,7 +89,7 @@ public:
 
     void prepareToPlay (double sampleRate, int samplesPerBlock);
     void releaseResources();
-    void processBlock (float& buffer);
+    void processBlock (float *buffer, int samplesRead, int nchannels, int frameSize);
     //AudioProcessorEditor* createEditor();
     //bool hasEditor();
     //const std::string getName() ;
