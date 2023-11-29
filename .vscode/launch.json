@@ -10,7 +10,7 @@
             "request": "launch",
             "name": "Debug",
             "program": "${workspaceFolder}/build/binauralplayer",
-            "args": ["${workspaceFolder}/wav/hoot.wav"],
+            "args": ["${workspaceFolder}/wav/hoot.wav", "46"],
             "cwd": "${workspaceFolder}"
         }
     ]
